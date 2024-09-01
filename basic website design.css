@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure that header stays at the top */
+    background: url('green background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background to enhance readability */
+    color: white;
+    text-align: left;
+    position: absolute; /* Make the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    height: 50px; /* Adjust the height of the logo */
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover state */
+nav ul li a:hover {
+    border-color: #2e6645;
+    background-color: rgba(255, 87, 51, 0.1);
+}
+
+nav .icon {
+    font-size: 24px; /* Adjust icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+nav .text {
+    font-size: 18px; /* Adjust text size */
+}
+
+.content-container {
+    display: flex; /* Arrange sections in a row */
+    justify-content: center; /* Center the sections horizontally */
+    align-items: center; /* Center the sections vertically */
+    gap: 20px; /* Add space between the boxes */
+    z-index: 1; /* Ensure content is above the background image */
+}
+
+#tittle1 {
+    padding: 15px;
+    border: 2px solid #4CAF50; /* Border for tittle1 */
+    border-radius: 8px;
+    width: 100%; /* Ensure boxes take full width of container */
+    max-width: 35%; /* Set a maximum width for the boxes */
+    text-align: left; /* Align text to the left */
+    background-color: #f0f8ff; /* Background color for tittle1 */
+}
+
+#tittle2 {
+    padding: 15px;
+    border: none; /* Remove the border from tittle2 */
+    border-radius: 8px;
+    width: 100%; /* Ensure boxes take full width of container */
+    max-width: 35%; /* Set a maximum width for the boxes */
+    text-align: left; /* Align text to the left */
+}
+
+footer {
+    background-color: #578a5e;
+    color: #f7f7f7;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 4px solid #31ca64;
+    z-index: 1; /* Ensure footer is above the background image */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+#b1 {
+    background-color: #FF5733; /* Background color for the first button */
+}
+
+#b1:hover {
+    background-color: #e64d2e; /* Hover effect for the first button */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#b2 {
+    background-color: #3498db; /* Background color for the second button */
+}
+
+#b2:hover {
+    background-color: #2980b9; /* Hover effect for the second button */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
